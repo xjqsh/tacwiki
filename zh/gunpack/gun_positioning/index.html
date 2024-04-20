@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>调整枪械模型定位组 | Timeless and Classics guns Wiki</title>
+    <meta name="generator" content="VuePress 1.9.10">
+    
+    <meta name="description" content="A wiki related to Minecraft mod: Timeless and Classics guns">
+    
+    <link rel="preload" href="/assets/css/0.styles.8f3dca9f.css" as="style"><link rel="preload" href="/assets/js/app.e3a67cda.js" as="script"><link rel="preload" href="/assets/js/2.ee86ac9f.js" as="script"><link rel="preload" href="/assets/js/1.13dadfdb.js" as="script"><link rel="preload" href="/assets/js/11.65f950cd.js" as="script"><link rel="prefetch" href="/assets/js/10.d9fb7a41.js"><link rel="prefetch" href="/assets/js/12.db7ae80a.js"><link rel="prefetch" href="/assets/js/13.8eb5da1f.js"><link rel="prefetch" href="/assets/js/14.95618903.js"><link rel="prefetch" href="/assets/js/15.4a794eb9.js"><link rel="prefetch" href="/assets/js/16.fd6306fb.js"><link rel="prefetch" href="/assets/js/17.1b03c282.js"><link rel="prefetch" href="/assets/js/18.d1e17a34.js"><link rel="prefetch" href="/assets/js/19.c3edb147.js"><link rel="prefetch" href="/assets/js/20.427d3fdd.js"><link rel="prefetch" href="/assets/js/21.e4fea2d1.js"><link rel="prefetch" href="/assets/js/22.88ae7534.js"><link rel="prefetch" href="/assets/js/23.014a5934.js"><link rel="prefetch" href="/assets/js/24.46b045df.js"><link rel="prefetch" href="/assets/js/25.ef168f15.js"><link rel="prefetch" href="/assets/js/26.119fe8e0.js"><link rel="prefetch" href="/assets/js/27.1c25bfae.js"><link rel="prefetch" href="/assets/js/28.1de7438a.js"><link rel="prefetch" href="/assets/js/29.94087a2b.js"><link rel="prefetch" href="/assets/js/3.6cc58743.js"><link rel="prefetch" href="/assets/js/30.2b132108.js"><link rel="prefetch" href="/assets/js/31.a69784cb.js"><link rel="prefetch" href="/assets/js/32.47a3dd68.js"><link rel="prefetch" href="/assets/js/33.ee3c50ac.js"><link rel="prefetch" href="/assets/js/34.d2eb9cb1.js"><link rel="prefetch" href="/assets/js/35.330d88b2.js"><link rel="prefetch" href="/assets/js/36.04ac3999.js"><link rel="prefetch" href="/assets/js/37.caf4e9f7.js"><link rel="prefetch" href="/assets/js/38.1197dbc2.js"><link rel="prefetch" href="/assets/js/39.5b92d341.js"><link rel="prefetch" href="/assets/js/4.4f9783c5.js"><link rel="prefetch" href="/assets/js/5.b5642741.js"><link rel="prefetch" href="/assets/js/6.c7915d93.js"><link rel="prefetch" href="/assets/js/7.8b542b32.js"><link rel="prefetch" href="/assets/js/vendors~docsearch.34c2b646.js">
+    <link rel="stylesheet" href="/assets/css/0.styles.8f3dca9f.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container no-sidebar"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/" class="home-link router-link-active"><!----> <span class="site-name">Timeless and Classics guns Wiki</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <!----></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><!---->  <!----> </aside> <main class="page"> <div class="theme-default-content content__default"><h1 id="调整枪械模型定位组"><a href="#调整枪械模型定位组" class="header-anchor">#</a> 调整枪械模型定位组</h1> <p>对于任意枪械模型，你需要为它们放置 iron_view、idle_view、ground、thirdperson_hand、fixed 这五个定位组，它们应当只被用于模型定位，因此包含于它们内部的模型将不会被实际渲染。<br>
+接下来演示如何创建、调整这些定位组。</p> <h3 id="为-blockbench-安装-cameras-插件"><a href="#为-blockbench-安装-cameras-插件" class="header-anchor">#</a> 为 BlockBench 安装 cameras 插件</h3> <p>模型定位组的调整需要依赖 cameras 插件。<br>
+你可以从 <a href="https://github.com/JannisX11/blockbench-plugins/blob/master/plugins/cameras.js" target="_blank" rel="noopener noreferrer">这里<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a> 下载 cameras 插件。
+按照如下步骤将 cameras 安装到你的 BlockBench。<br> <img src="/assets/img/blockbench_load_plugin_1.51b476ba.png" alt="Install Plugin 1"><br> <img src="/assets/img/blockbench_load_plugin_2.70a083b7.png" alt="Install Plugin 2"></p> <h3 id="更改-blockbench-的-fov-设置"><a href="#更改-blockbench-的-fov-设置" class="header-anchor">#</a> 更改 BlockBench 的 FOV 设置</h3> <p>在开始调整第一人称定位之前，你需要确认你的 BlockBench 预览 FOV 为 70。这是因为在 Minecraft 中，第一人称物品渲染的默认 FOV 是 70。<br> <img src="/assets/img/fov_check_1.38ccaa95.png" alt="FOV Check 1"><br> <img src="/assets/img/fov_check_2.ba722730.png" alt="FOV Check 2"></p> <h3 id="调整第一人称摄像机定位组"><a href="#调整第一人称摄像机定位组" class="header-anchor">#</a> 调整第一人称摄像机定位组</h3> <p>首先，为了模型分组整洁，我们可以创建一个名为 positioning 的分组 (这个分组的名称你可以自己决定) ，用于统一存放各种模型定位组。<br>
+接下来，在 position 中新建两个分组，分别名为 iron_view 和 idle_view (这两个分组的名称不能改变)。它们分别是 机瞄视角的定位组 和 正常持握视角的定位组。</p> <div class="custom-block tip"><p class="custom-block-title">提示</p> <p>iron_view 可以被理解为：在玩家用枪械的机械瞄具瞄准时，玩家眼球的位置和朝向。<br>
+idle_view 则是玩家在非瞄准状态下眼球的位置和朝向。</p></div> <p>为了可以预览摄像机定位组的效果，我们需要为定位组添加摄像机。选中需要添加摄像机的定位组，按照如下方式添加摄像机。<br> <img src="/assets/img/add_camera.79d0ae03.png" alt="Add Camera"><br>
+接下来，将定位组拖动到合适的位置。</p> <div class="custom-block warning"><p class="custom-block-title">注意</p> <p>请确保拖动的时候选定的是定位组本身，而不是定位组里的 camera。在拖动定位组的时候，右上角的参数显示里，Position 数值和 Pivot Point 数值应当同时变化。</p></div> <p><img src="/assets/img/iron_view_1.4aae876d.png" alt="Iron View 1"><br>
+你可以随时将视角绑定到摄像机进行预览。<br> <img src="/assets/img/iron_view_2.5c86fa64.png" alt="Iron View 2"><br>
+我们用相同方法将 idle_view 放置好。<br> <img src="/assets/img/idle_view.873cb0ac.png" alt="Idle View"><br>
+最后，导出模型文件，启动游戏，你应该可以看到类似下图的效果。<br> <img src="/assets/img/in_game.a499748f.gif" alt="In Game"></p> <h3 id="调整第三人称模型定位组"><a href="#调整第三人称模型定位组" class="header-anchor">#</a> 调整第三人称模型定位组</h3> <p>在 position 中新建三个分组，分别名为 ground 、thirdperson_hand 和 fixed (这三个分组的名称不能改变)。它们分别是 掉落物模型定位、生物实体手持模型定位 和 展示框模型定位。<br>
+一般而言，</p> <ul><li>ground 分组应当位于枪械模型正下方</li> <li>thirdperson_hand 应位于枪械模型握把或扳机位置，朝向枪的前端。y轴可以向正方向额外旋转十五度（因为生物手模型并非完全与视线平行）。</li> <li>fixed 应位于枪械模型中央，并朝向枪的侧面。</li></ul> <div class="custom-block tip"><p class="custom-block-title">提示</p> <p>你可以为这些定位组添加摄像机，以便于观察它们的朝向。</p></div> <p>以下展示教程枪的三个定位组。<br> <img src="/assets/img/ground.3f897d8e.png" alt="Ground"><br> <img src="/assets/img/thirdperson_hand.da1d78c5.png" alt="Thirdperson Hand"><br> <img src="/assets/img/fixed.6b0bf9fb.png" alt="Fixed"><br>
+如果你正确地放置了定位组，在游戏中应该看到类似下图的效果。<br> <img src="/assets/img/in_game_2.c9278bf8.png" alt="In Game 2">
+你可以在效果文件中更改枪械模型在这三种情况下的缩放系数<br>
+在 guns/display/ak47_display.json 中添加如下代码</p> <div class="language-json extra-class"><pre class="language-json"><code>    <span class="token property">&quot;transform&quot;</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+        <span class="token property">&quot;scale&quot;</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+            <span class="token comment">// 第三人称手部</span>
+            <span class="token property">&quot;thirdperson&quot;</span><span class="token operator">:</span> <span class="token punctuation">[</span>
+                <span class="token number">0.6</span><span class="token punctuation">,</span>
+                <span class="token number">0.6</span><span class="token punctuation">,</span>
+                <span class="token number">0.6</span>
+            <span class="token punctuation">]</span><span class="token punctuation">,</span>
+            <span class="token comment">// 掉落物</span>
+            <span class="token property">&quot;ground&quot;</span><span class="token operator">:</span> <span class="token punctuation">[</span>
+                <span class="token number">0.6</span><span class="token punctuation">,</span>
+                <span class="token number">0.6</span><span class="token punctuation">,</span>
+                <span class="token number">0.6</span>
+            <span class="token punctuation">]</span><span class="token punctuation">,</span>
+            <span class="token comment">// 展示框</span>
+            <span class="token property">&quot;fixed&quot;</span><span class="token operator">:</span> <span class="token punctuation">[</span>
+                <span class="token number">1.0</span><span class="token punctuation">,</span>
+                <span class="token number">1.0</span><span class="token punctuation">,</span>
+                <span class="token number">1.0</span>
+            <span class="token punctuation">]</span>
+        <span class="token punctuation">}</span>
+    <span class="token punctuation">}</span><span class="token punctuation">,</span>
+</code></pre></div><p>你的 ak47_display.json 整体看起来应该像:</p> <div class="language-json extra-class"><pre class="language-json"><code><span class="token punctuation">{</span>
+    <span class="token property">&quot;model&quot;</span><span class="token operator">:</span> <span class="token string">&quot;tutorial:gun/ak47_geo&quot;</span><span class="token punctuation">,</span>
+    <span class="token property">&quot;texture&quot;</span><span class="token operator">:</span> <span class="token string">&quot;tutorial:gun/uv/ak47&quot;</span><span class="token punctuation">,</span>
+    <span class="token property">&quot;slot&quot;</span><span class="token operator">:</span> <span class="token string">&quot;tutorial:gun/slot/ak47&quot;</span><span class="token punctuation">,</span>
+    <span class="token property">&quot;transform&quot;</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+        <span class="token property">&quot;scale&quot;</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+            <span class="token property">&quot;thirdperson&quot;</span><span class="token operator">:</span> <span class="token punctuation">[</span>
+                <span class="token number">0.6</span><span class="token punctuation">,</span>
+                <span class="token number">0.6</span><span class="token punctuation">,</span>
+                <span class="token number">0.6</span>
+            <span class="token punctuation">]</span><span class="token punctuation">,</span>
+            <span class="token property">&quot;ground&quot;</span><span class="token operator">:</span> <span class="token punctuation">[</span>
+                <span class="token number">0.6</span><span class="token punctuation">,</span>
+                <span class="token number">0.6</span><span class="token punctuation">,</span>
+                <span class="token number">0.6</span>
+            <span class="token punctuation">]</span><span class="token punctuation">,</span>
+            <span class="token property">&quot;fixed&quot;</span><span class="token operator">:</span> <span class="token punctuation">[</span>
+                <span class="token number">1.0</span><span class="token punctuation">,</span>
+                <span class="token number">1.0</span><span class="token punctuation">,</span>
+                <span class="token number">1.0</span>
+            <span class="token punctuation">]</span>
+        <span class="token punctuation">}</span>
+    <span class="token punctuation">}</span><span class="token punctuation">,</span>
+    <span class="token property">&quot;third_person_animation&quot;</span><span class="token operator">:</span> <span class="token string">&quot;default&quot;</span>
+<span class="token punctuation">}</span>
+</code></pre></div></div> <footer class="page-edit"><!----> <!----></footer> <!----> </main></div><div class="global-ui"></div></div>
+    <script src="/assets/js/app.e3a67cda.js" defer></script><script src="/assets/js/2.ee86ac9f.js" defer></script><script src="/assets/js/1.13dadfdb.js" defer></script><script src="/assets/js/11.65f950cd.js" defer></script>
+  </body>
+</html>
